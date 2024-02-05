@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This is a personal fork of [jasonchoimtt/koreader-syncthing](https://github.com/jasonchoimtt/koreader-syncthing) to get things playing nicely on my anciant Kindle PW.
+> These changes have helped improve my own experience, but may not help others, or may even make things worse 😉.
+
 # Syncthing plugin for KOReader
 
 This is a plugin for running Syncthing on e-readers running KOReader. Syncthing
