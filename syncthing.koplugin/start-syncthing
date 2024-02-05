@@ -36,6 +36,7 @@ fi
 if [ ! -f "$config_dir/device-id" ]; then
     # Save the device ID to a file for easy access from KOReader
     "$syncthing" \
+	--no-upgrade \
         --config="$config_dir" \
         --data="$config_dir" \
         --device-id > "$config_dir/device-id"
@@ -43,6 +44,7 @@ fi
 
 # We need to listen to 0.0.0.0 so that the GUI is accessible over the network
 "$syncthing" serve \
+    --no-upgrade \
     --config="$config_dir" \
     --data="$config_dir" \
     --gui-address=http://0.0.0.0:$port \
